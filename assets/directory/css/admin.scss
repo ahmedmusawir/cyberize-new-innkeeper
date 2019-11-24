@@ -1,0 +1,46 @@
+.wp-admin {
+  background: lighten(lightblue, 10%); /* they forgot the language! */
+  // padding: 6px 10px;
+  // font-size: 16px;
+  // border: 0px solid #ccc;
+}
+
+.post-type-listing {
+
+	// border: 1rem solid red;
+
+	#wpbody-content {
+
+		#dashboard_activity {
+			// display: none;
+		}
+
+		#postbox-container-2 {
+			// display: none;
+		}
+
+		#postbox-container-1 {
+			// display: none;
+		}
+
+		.wrap {
+			// border: 1rem dotted red;
+			
+			.author-other {
+				// display: none;
+			}
+		}
+
+		.user-admin-color-wrap {
+			display: none;
+		}	
+
+	}
+}
+
+
+#wpadminbar {
+	// border: 1rem solid red;
+	// display: none;
+	border: none;
+}

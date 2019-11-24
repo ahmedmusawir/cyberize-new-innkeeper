@@ -1,0 +1,14 @@
+.wp-admin {
+  background: #d4ebf2;
+  /* they forgot the language! */
+}
+
+.post-type-listing #wpbody-content .user-admin-color-wrap {
+  display: none;
+}
+
+#wpadminbar {
+  border: none;
+}
+
+/*# sourceMappingURL=admin.css.map */
