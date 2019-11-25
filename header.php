@@ -44,7 +44,7 @@
 						'menu_id'        => 'primary-menu',
 						'container'      => false,
 						'depth'          => 2,
-						'menu_class'     => 'navbar-nav mr-auto  pt-lg-5 pt-xl-0',
+						'menu_class'     => 'navbar-nav ml-auto  pt-lg-5 pt-xl-0',
 						'walker'         => new Bootstrap_NavWalker(), // This controls the display of the Bootstrap Navbar
 						'fallback_cb'    => 'Bootstrap_NavWalker::fallback', // For menu fallback
 					) );

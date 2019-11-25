@@ -1,11 +1,11 @@
 <?php
 
 // Replaces the excerpt "more" text by a link
-function new_excerpt_more($more) {
-       global $post;
-	return ' ... <a class="moretag" href="'. get_permalink($post->ID) . '"> Read More ></a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
+// function new_excerpt_more($more) {
+//        global $post;
+// 	return ' ... <a class="moretag" href="'. get_permalink($post->ID) . '"> Read More ></a>';
+// }
+// add_filter('excerpt_more', 'new_excerpt_more');
 
 
 // Remove Comments from Jetpack Carousel 
@@ -28,10 +28,10 @@ add_filter('widget_text','do_shortcode');
 // add_action('admin_enqueue_scripts', 'admin_style');
 
 // LIMIT THE EXCERPT LENGTH
-// function custom_excerpt_length( $length ) {
-//   return 50;
-// }
-// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 /**

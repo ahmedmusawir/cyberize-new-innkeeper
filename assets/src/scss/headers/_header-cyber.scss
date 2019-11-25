@@ -5,62 +5,55 @@
  */
 
 #header-cyber {
+  // display: none;
+  .navbar {
+    background: white;
+    height: 90px;
+    border-bottom: 1rem solid darken($color: $cg-secondary, $amount: 30%);
 
-	.navbar {
-		background: $cg-secondary;
-		height: 90px;
+    .navbar-brand {
+      .logo {
+        width: 80%;
+        // margin-bottom: -.5rem;
 
-		.navbar-brand {
-			.logo {
-				width: 80%;
-				// margin-bottom: -.5rem;
+        @media (max-width: 460px) {
+          width: 80%;
+        }
+      }
+    }
+    .navbar-toggler {
+      border: 3px solid lighten($cg-primary, 20%);
 
-				@media (max-width: 460px) {
-					width: 80%;
-				}
-			}
-		}
-		.navbar-toggler {
-			border: 3px solid lighten($cg-primary, 20%);
+      .navbar-toggler-icon {
+        background-image: url("/wp-content/uploads/2018/02/new-nav-icon-40.png");
+      }
+    }
+    #navbar-content {
+      #primary-menu {
+        padding-left: 2rem;
+        margin-bottom: -2rem;
 
-			.navbar-toggler-icon {
-				background-image: url('/wp-content/uploads/2018/02/new-nav-icon-40.png');
-			}
-		}
-		#navbar-content {
-			#primary-menu {
-				padding-left: 2rem;
-				margin-bottom: -2rem;
+        .menu-item {
+          // padding-right: 2rem;
 
-				.menu-item {
-					padding-right: 2rem;
-
-					a {
-						font-family: $primary-font;
-						font-size: .7rem;
-						font-weight: 700;
-						color: white !important;
-						text-transform: uppercase;
-						color: lighten($cg-secondary, 10%);
-						&:hover {
-							color: lighten($cg-secondary, 20%);
-						}
-					}
-				}
-				.current-menu-item {
-					a {
-						font-family: $secondary-font;
-						color: $cg-primary !important;
-						// border-top: 4px solid $cg-secondary;
-						// border-bottom: 4px solid $cg-secondary;
-					}
-				}
-				
-			}
-		}
-
-	}
+          a {
+            font-family: $primary-font;
+            font-size: 1rem;
+            font-weight: 400;
+            color: lighten($cg-primary, 0%);
+            &:hover {
+              color: lighten($cg-primary, 20%);
+            }
+          }
+        }
+        .current-menu-item {
+          a {
+            font-family: $primary-font;
+            color: darken($color: $cg-secondary, $amount: 30%);
+            border-bottom: 4px solid darken($color: $cg-secondary, $amount: 30%);
+          }
+        }
+      }
+    }
+  }
 }
-
-
-

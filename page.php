@@ -21,15 +21,14 @@ get_header(); ?>
 				<section class="container">
 
 					<h1 class="archive-index-title col-sm-6 col-md-3 col-lg-3 text-center">
-						<?php //the_field('blog_index_title', 'option') ?>
-						SINGLE PAGE
+						SAMPLE PAGE
 					</h1>
 					<div class="long-underline"></div>	
 
 					<div class="row">
 			
 
-						<div class="col-sm-12 col-md-12 col-lg-9">
+						<div class="col-sm-12 col-md-12 col-lg-12">
 
 
 							<?php
@@ -45,11 +44,7 @@ get_header(); ?>
 							endwhile; // End of the loop.
 							?>
 						</div>
-						<div class="col-sm-12 col-md-12 col-lg-3">
 
-							<?php get_sidebar(); ?>
-							
-						</div>	
 
 					</div> <!-- End Row -->	
 
@@ -59,37 +54,6 @@ get_header(); ?>
 			
 		<!-- </div> END ROW -->
 	</div><!-- #primary -->
-
-<!--====================================================
-=            THE IS THE THRIVE LEADBOX AREA            =
-=====================================================-->
-
-<section class="leadbox">
-
-	<div class="container">
-
-		<?php 
-
-			// $leadbox = get_field('mas_post_lead_shortcode');
-
-			// if ($leadbox) {
-			// 	echo do_shortcode( $leadbox ); 
-
-			// } else {
-			// 	echo do_shortcode( '[thrive_leads id="5486"]' );
-			// }
-
-		?>
-
-		<?php if (function_exists('tve_leads_form_display')) { tve_leads_form_display(0, 5486); } ?>
-
-		
-	</div>
-	
-</section>
-
-<!--====  End of THE IS THE THRIVE LEADBOX AREA  ====-->
-
 
 <?php
 get_footer();
