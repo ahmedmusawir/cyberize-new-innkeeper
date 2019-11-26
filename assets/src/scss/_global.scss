@@ -125,21 +125,19 @@ a {
 
 /*=====  End of GLOBAL CONTENT  ======*/
 
-/*==================================================
-=            MOBILE WHITE SPACE REMOVAL            =
-==================================================*/
-
-html,
-body {
-  // width: 100%;
-
-  // height: 100%;
-
-  // margin: 0px;
-
-  // padding: 0px;
-
-  // overflow-x: hidden;
+/**
+ * PAGINATION BY BESTSOFT   
+ */
+.pgntn-page-pagination {
+  .pgntn-page-pagination-block {
+    // border: 1rem solid red;
+    .page-numbers {
+      padding: 0.5rem 1rem;
+      border-radius: 30%;
+    }
+    .page-numbers.current {
+      background: $cg-primary !important;
+      color: white !important;
+    }
+  }
 }
-
-/*=====  End of MOBILE WHITE SPACE REMOVAL  ======*/

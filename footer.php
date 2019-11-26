@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="footer-cyberize" class="container-fluid site-footer">
+	<footer id="footer-cyberize" class="container site-footer">
 
 		<hr/>
 		<div class="widgets_wrapper">

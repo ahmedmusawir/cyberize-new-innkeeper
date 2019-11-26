@@ -13,20 +13,20 @@
 
 	</div><!-- #content -->
 
-	<footer id="footer-cyberize" class="site-footer">
+	<footer id="footer-cyberize" class="container-fluid site-footer">
 
-
-		<div class="container widgets_wrapper">
+		<hr/>
+		<div class="widgets_wrapper">
 		   <div class="row">
-		      <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+		      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 
-				<?php
+					<?php
 
-					if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
-						
-						echo "Please Insert A Widget";
-					}
-				?>
+						if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
+							
+							echo "Please Insert A Widget";
+						}
+					?>
 
 					<aside id="footer-widget-1" class="widget-area">
 						<?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
@@ -34,15 +34,15 @@
 
 		        
 		      </div>
-		      <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+		      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 
-				<?php
+					<?php
 
-					if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
-						
-						echo "Please Insert A Widget";
-					}
-				?>
+						if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
+							
+							echo "Please Insert A Widget";
+						}
+					?>
 
 					<aside id="footer-widget-2" class="widget-area">
 						<?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
@@ -50,21 +50,37 @@
 
 		         
 		      </div>
-		      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+		      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
-				<?php
+					<?php
 
-					if ( ! is_active_sidebar( 'footer-sidebar-3' ) ) {
-						
-						echo "Please Insert A Widget";
-					}
-				?>
+						if ( ! is_active_sidebar( 'footer-sidebar-3' ) ) {
+							
+							echo "Please Insert A Widget";
+						}
+					?>
 
 					<aside id="footer-widget-3" class="widget-area">
 						<?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
-					</aside><!-- #secondary -->
+					</aside>
 
-		      </div>
+		      </div> 
+
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+
+					<?php
+
+						if ( ! is_active_sidebar( 'footer-sidebar-4' ) ) {
+							
+							echo "Please Insert A Widget";
+						}
+					?>
+
+					<aside id="footer-widget-4" class="widget-area">
+						<?php dynamic_sidebar( 'footer-sidebar-4' ); ?>
+					</aside>
+
+		      </div> 
 		      
 		   </div> <!-- END ROW -->
 		   <div class="row">
@@ -79,30 +95,30 @@
 				</div><!-- .copyright -->	
 			</div>		
 		</div> <!-- END WIDGET WRAPPER -->
-		<section class="site-info container">
+		
+		<!-- <section class="site-info container">
 
-			<div class="">
-				<div class="copyright  d-flex align-items-center">
-					<div class="text-center mx-auto">
+			<div class="copyright  d-flex align-items-center">
+				
+				<div class="text-center mx-auto">
 
-						<a href="<?php echo esc_url( __( 'https://cyberizegroup.com/', 'moose-framework-2' ) ); ?>"><?php
-							printf( esc_html__( 'Proudly powered by %s', 'moose-framework-2' ), 'CyberizeFramework' );
-						?></a>
-						<span class="sep"> | </span>
-						<?php the_field('theme_footer_text', 'option') ?>
+					<a href="<?php echo esc_url( __( 'https://cyberizegroup.com/', 'moose-framework-2' ) ); ?>"><?php
+						printf( esc_html__( 'Proudly powered by %s', 'moose-framework-2' ), 'CyberizeFramework' );
+					?></a>
+					<span class="sep"> | </span>
+					<?php the_field('theme_footer_text', 'option') ?>
 
-					</div>	
-						
-				</div>						
-			</div>
+				</div>	
+					
+			</div>						
 			
-		</section>
+		</section> -->
 
 				<!--==============================================================================
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->
 				
-				<div style="color: white"><strong>Current template:</strong> 
+				<div style="color: red"><strong>Current template:</strong> 
 					<?php  echo get_current_template( true ); ?>
 				</div>
 				

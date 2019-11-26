@@ -9,6 +9,12 @@
 
 get_header(); ?>
 
+<style>
+#primary {
+	background: url('http://new-innkeeper.local/wp-content/uploads/2019/11/innkeep-page-bg.jpg') no-repeat fixed;
+}
+</style>
+
 <div id="primary" class="content-area">
 	<!-- <div class="row"> -->
 		<main id="main" class="site-main">
@@ -30,6 +36,7 @@ get_header(); ?>
 		
 	<!-- </div> END ROW -->
 </div><!-- #primary -->
+
 
 <?php
 get_footer();

@@ -235,7 +235,38 @@
 		</div><!-- .entry-content -->
 
 		<footer class="similar-property-box container">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor porro a quod! Nesciunt veritatis reprehenderit ipsam distinctio. Porro asperiores nostrum sapiente quidem dicta atque enim, fugit aliquid ratione quas.
+			<div class="property-box-content">
+				<h3 class="title text-center pb-4 text-primary">Featured Properties</h3>
+				<div class="row">
+					<article class="col-md-4 featured">
+						<a href="/listing/ryans-home/">
+							<figure class="property-image">
+								<img src="/wp-content/uploads/2019/11/5fc0cb39c36b00917d2226b803b389a1.png" alt="" class="img-fluid">
+							</figure>	
+							<h4 class="prop-title">Lemon Tree Inn</h4>		
+							<h6 class="prop-price">$99 - $160</h6>	
+						</a>
+					</article>
+					<article class="col-md-4 featured">
+						<a href="/case-ranch-hotel/">
+							<figure class="property-image">
+								<img src="/wp-content/uploads/2019/11/9635c14795017c6f4a0e90fa4c299d33.png" alt="" class="img-fluid">
+							</figure>	
+							<h4 class="prop-title">Southernmost Beach Resort</h4>		
+							<h6 class="prop-price">$199 - $260</h6>	
+						</a>
+					</article>
+					<article class="col-md-4 featured">
+						<a href="/black-heron-hotel/">
+							<figure class="property-image">
+								<img src="/wp-content/uploads/2019/11/288023730d9013443946df296168fdfc.png" alt="" class="img-fluid">
+							</figure>	
+							<h4 class="prop-title">Palmetto Riverside Bed and Breakfast</h4>		
+							<h6 class="prop-price">$991 - $1601</h6>	
+						</a>
+					</article>
+				</div>
+			</div>
 		</footer><!-- .entry-footer -->
 		
 	</section>
