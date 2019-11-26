@@ -9,12 +9,28 @@
   .top-search-box {
     .container {
       background: $cg-secondary !important;
+      margin-top: 3rem;
+
+      .search-box {
+        label {
+          width: 100%;
+        }
+        .search-field {
+          width: 100% !important;
+          border: 1px solid $cg-secondary;
+          padding: 0.5rem 1rem;
+          margin-top: 1rem;
+        }
+        .search-submit {
+          display: none;
+        }
+      }
     }
   }
   .container-fluid {
     background: white;
     padding: 2rem;
-    margin-top: 4rem;
+    // margin-top: 4rem;
 
     .row {
       position: relative;
@@ -186,8 +202,8 @@
         .posted-on {
           // border: 1px solid red;
           &:before {
-            font-family: "FontAwesome";
-            content: "\f017";
+            font-family: 'FontAwesome';
+            content: '\f017';
             color: $cg-secondary;
             padding-right: 0.5rem;
             padding-left: 0.5rem;
@@ -198,8 +214,8 @@
           // border: 1px solid red;
           text-transform: capitalize;
           &:before {
-            font-family: "FontAwesome";
-            content: "\f234";
+            font-family: 'FontAwesome';
+            content: '\f234';
             color: $cg-secondary;
             padding-right: 0.5rem;
             padding-left: 0.5rem;

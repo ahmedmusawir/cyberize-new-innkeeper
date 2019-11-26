@@ -10,117 +10,234 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-single'); ?>>
-	<section class="post-bizmobile">
-
+	<section class="post-innkeeper">
 		
 		<div class="entry-content container">
 
-
-			<h1 class="blog-index-title col-sm-6 col-md-3 col-lg-3 text-center">
-				<?php //the_field('blog_index_title', 'option') ?>
-				SINGLE LISTING
-			</h1>
-			<div class="long-underline"></div>	
-
-			<div class="row">
-
-				<div class="col-sm-12 col-md-12 col-lg-9">
-
-					<figure class="featured-img-holder">
-						<?php cyberize_post_thumbnail(); ?>
-					</figure>
-					
-					<main class="">
-						<!-- CATEGORY -->
-						<!-- <h5 class="post-category"><?php // cyberize_entry_footer(); ?></h5> -->
-						<?php
+			<?php
 						if ( is_singular() ) :
 							the_title( '<h1 class="entry-title mx-auto">', '</h1>' );
 							// the_title( '<h1 class="entry-title text-center">', '</h1>' );
 						else :
 							the_title( '<h2 class="entry-title mx-auto"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 						endif;
+			?>
 
-						if ( 'listing' === get_post_type() ) : ?>
-						<div class="entry-meta pl-2 mb-5 row">
-							<?php
-								cyberize_posted_by();
-								echo '<span class="divider p-2">/</span>';
-								cyberize_posted_on();
-								echo '<span class="divider p-2">/</span>';
-								// cyberize_entry_footer();
+			<div class="row">
 
-							?>	
-								<ul class="list-inline">Listing Category:<?php echo get_the_term_list( $post->ID, 'listing-category', '<li class="list-inline-item">', ', ', '</li>' ) ?></ul>
-								<ul class="list-inline">Listing Tag:<?php echo get_the_term_list( $post->ID, 'listing-tag', '<li class="list-inline-item">', ', ', '</li>' ) ?></ul>
-						</div><!-- .entry-meta -->
-						<?php
-						endif; ?>
+				<div class="col-sm-12 col-md-12 col-lg-6">
 
-					</main>
+					<figure class="featured-img-holder">
+						<?php // cyberize_post_thumbnail(); ?>
+					</figure>
+	
+					<?php
 
-					<!-- SINGLE LIST ITEM MAP -->
+						the_content();
+				
+					?>	
+
+				</div>
+				<aside id="sidebar" class="col-sm-12 col-md-12 col-lg-6">
+
+				<section class="single-listing-info-box">
+					<article class="row">
+						<div class="col-sm-7">
+							<h2 class="price-range">
+								$245 - $1200
+								<a href="#" class="btn btn-primary">Visit Website</a>
+							</h2>
+						</div>
+						<div class="col-sm-5">
+							<h2 class="btn-set">
+								<img class="img-fluid" src="http://new-innkeeper.local/wp-content/uploads/2019/11/Screen-Shot-2019-11-26-at-11.16.28-AM.png" alt="">
+							</h2>
+						</div>
+					</article>
+					<article class="row phone-box">
+						<div class="col-sm-6">
+							<div class="row">
+                <div class="col-2">
+                  <i class="fas fa-phone-volume"></i>
+                </div>
+                <div class="col-10">
+                  941.964.4500
+                </div>
+              </div>
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+                <div class="col-2">
+                  <i class="fas fa-phone-volume"></i>
+                </div>
+                <div class="col-10">
+                  800.996.1913
+                </div>
+              </div>
+						</div>
+					</article>
+					<hr>
+					<span class="highlight">Innkeeper:</span> Staff
+					<hr>
+					<div class="row address-box">
+						<div class="col-2">
+              <i class="fas fa-map-marked-alt"></i>
+						</div>
+						<div class="col-10">
+							500 Palm Ave Boca Grande, FL 33921
+						</div>
+					</div>
+
+				</section>
+
+				<section class="social-links">
+					<img class="img-fluid pt-3" src="http://new-innkeeper.local/wp-content/uploads/2019/11/Screen-Shot-2019-11-26-at-12.02.50-PM.png" alt="">
+				</section>
+
+					<!-- SINGLE ACF LIST ITEM MAP -->
 					<div class="acf-map acf-map-single">
 
 						<?php 
-
 							$mapLocation = get_field('listing_address_with_map');
-
 						    // print_r($mapLocation);
 						?>
-						    <div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng']; ?>">
-						    	<h6 class=""><?php the_title(); ?></h6>
-						    	<?php echo $mapLocation['address']; ?>
-						    </div>
+						<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng']; ?>">
+							<h6 class=""><?php the_title(); ?></h6>
+							<?php echo $mapLocation['address']; ?>
+						</div>
 
 					</div> <!-- ACF-MAP END -->		
 
-					<!-- OTHER ACF OUTPUT START -->
-
-					<style type="text/css">
-						.acf-output {
-							padding: 1rem;
-							margin-bottom: 1rem;
-							background: #e3e3e3;
-						}
-					</style>
-
-					<section class="acf-output row">
-						<div class="col-sm-4">
-							<h6><strong>US State:</strong> <?php the_field('us_state') ?></h6>
-						</div>
-						<div class="col-sm-4">
-							<h6><strong>Listing Type:</strong> <?php the_field('listing_type') ?></h6>
-						</div>
-						<div class="col-sm-4">
-							<h6><strong>Payment Type:</strong> <?php the_field('payment_type') ?></h6>
-						</div>
-					</section>						
-
-					<!-- OTHER ACF OUTPUT END -->
-
-
-					<?php
-						the_content();
-
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						// if ( comments_open() || get_comments_number() ) :
-						// 	comments_template();
-						// endif;						
-					?>	
-							
-				</div>
-				<aside id="sidebar" class="col-sm-12 col-md-12 col-lg-3">
-
-					<?php get_sidebar();  ?>
 
 				</aside>
-			</div>
+			</div> <!--  end main row -->
+			<section class="innkeeper-tabbed-content">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">In-Room</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Policies</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">On-Site</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<?php  
+							if ( 'listing' === get_post_type() ) : 
+						?>
+						
+						<div class="taxonomy-box">
+							
+								<?php   // Get terms for post
+								$terms = get_the_terms( $post->ID , 'in-room' );
+								// Loop over each item since it's an array
+								if ( $terms != null ){
+								echo '<ul class="list-unstyled">';	
+									foreach( $terms as $term ) {
+										// Print the name method from $term which is an OBJECT
+										echo '<li class="list-inline-item"><img src="http://new-innkeeper.local/wp-content/uploads/2019/11/the-key.png" alt="">' . $term->name . "</li>";
+										// Get rid of the other data stored in the object, since it's not needed
+										unset($term);
+									} 
+								echo '</ul>';
+								} ?>
+								
+						</div><!-- .entry-meta -->
+
+						<?php
+							endif; 
+						?>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aspernatur enim. Deleniti voluptates, quidem dolorum facilis, harum, numquam quis ex blanditiis est nemo aliquid explicabo cum! Recusandae, maxime. Fugit, exercitationem!
+					</div>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						
+						<?php  
+							if ( 'listing' === get_post_type() ) : 
+						?>
+						
+						<div class="taxonomy-box">
+							
+								<?php   // Get terms for post
+								$terms = get_the_terms( $post->ID , 'on-site' );
+								// Loop over each item since it's an array
+								if ( $terms != null ){
+								echo '<ul class="list-unstyled">';	
+									foreach( $terms as $term ) {
+										// Print the name method from $term which is an OBJECT
+										echo '<li class="list-inline-item"><img src="http://new-innkeeper.local/wp-content/uploads/2019/11/the-key.png" alt="">' . $term->name . "</li>";
+										// Get rid of the other data stored in the object, since it's not needed
+										unset($term);
+									} 
+								echo '</ul>';
+								} ?>
+								
+						</div><!-- .entry-meta -->
+
+						<?php
+							endif; 
+						?>
+					
+					</div>
+				</div>
+			</section>
+			<section class="check-in-info-box">
+				<article class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-adjust"></i>
+							</div>
+							<div class="col-11">
+								<span class="highlight">Check In:</span> 3:00 PM
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-adjust"></i>
+							</div>
+							<div class="col-11">
+								<span class="highlight">Check Out:</span> 11:00 AM
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-adjust"></i>
+							</div>
+							<div class="col-11">
+								<span class="highlight">Deposit:</span> Please visit our website or contact us for detailed information about any deposit requirements.
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-1">
+								<i class="fas fa-adjust"></i>
+							</div>
+							<div class="col-11">
+								<span class="highlight">Cancelation:</span> Please visit our website or contact us for detailed information about our cancellation policy.
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
+		<footer class="similar-property-box container">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor porro a quod! Nesciunt veritatis reprehenderit ipsam distinctio. Porro asperiores nostrum sapiente quidem dicta atque enim, fugit aliquid ratione quas.
 		</footer><!-- .entry-footer -->
+		
 	</section>
 </article><!-- #post-<?php the_ID(); ?> -->
 

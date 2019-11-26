@@ -31,34 +31,5 @@ get_header(); ?>
 	<!-- </div> END ROW -->
 </div><!-- #primary -->
 
-<!--====================================================
-=            THE IS THE THRIVE LEADBOX AREA            =
-=====================================================-->
-
-<section class="leadbox">
-
-	<div class="container">
-
-		<?php 
-
-			// $leadbox = get_field('mas_post_lead_shortcode');
-
-			// if ($leadbox) {
-			// 	echo do_shortcode( $leadbox ); 
-
-			// } else {
-			// 	echo do_shortcode( '[thrive_leads id="5486"]' );
-			// }
-
-		?>
-		<?php if (function_exists('tve_leads_form_display')) { tve_leads_form_display(0, 5486); } ?>
-		
-		
-	</div>
-	
-</section>
-
-<!--====  End of THE IS THE THRIVE LEADBOX AREA  ====-->
-
 <?php
 get_footer();

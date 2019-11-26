@@ -1,21 +1,21 @@
 /*=============================
 =            GLOBALS            =
 =============================*/
-@import "wp_default";
-@import "global";
-@import "custom";
-@import "contents/single-global";
-@import "contents/404-page/404-page";
-@import "contents/sidebar/sidebar-global";
-@import "footers/footer-general";
+@import 'wp_default';
+@import 'global';
+@import 'custom';
+@import 'contents/single-global';
+@import 'contents/404-page/404-page';
+@import 'contents/sidebar/sidebar-global';
+@import 'footers/footer-general';
 
 /*=======================================
 =    HEADER & FOOTER & SIDEBAR            =
 =======================================*/
 
-@import "headers/header-cyber";
-@import "footers/footer-cyberize";
-@import "footers/footer-general";
+@import 'headers/header-cyber';
+@import 'footers/footer-cyberize';
+@import 'footers/footer-general';
 // @import "contents/sidebar/sidebar-global";
 
 /*=====  End of HEADER & FOOTER  ======*/
@@ -24,7 +24,7 @@
 =            PAGE GENERAL            =
 ========================================*/
 
-@import "contents/page/page-bizmobile";
+@import 'contents/page/page-bizmobile';
 
 /*=====  End of PAGE GENERAL  ======*/
 
@@ -32,7 +32,7 @@
 =            BLOG INDEX PAGE            =
 =======================================*/
 
-@import "contents/blog-index-page/blog-index-bizmobile";
+@import 'contents/blog-index-page/blog-index-bizmobile';
 // @import "contents/blog-index-page/blog-index-cyberize";
 
 /*=====  End of BLOG INDEX PAGE  ======*/
@@ -41,7 +41,7 @@
 =            SINGLE BLOG POST            =
 ========================================*/
 
-@import "contents/single-post/post-bizmobile";
+@import 'contents/single-post/post-innkeeper';
 // @import "contents/single-post/post-mas";
 // @import "contents/single-post/post-cyberize";
 
@@ -51,7 +51,7 @@
 =            SEARCH INDEX PAGE            =
 =========================================*/
 
-@import "contents/search-index-page/search-index-bizmobile";
+@import 'contents/search-index-page/search-index-bizmobile';
 // @import "contents/search-index-page/search-index-cyberize";
 
 /*=====  End of SEARCH INDEX PAGE  ======*/
@@ -60,7 +60,7 @@
 =            ARCHIVE INDEX PAGE            =
 ==========================================*/
 
-@import "contents/archive-index-page/archive-index-innkeeper";
+@import 'contents/archive-index-page/archive-index-innkeeper';
 
 /*=====  End of ARCHIVE INDEX PAGE  ======*/
 
@@ -68,9 +68,9 @@
 =            PORTFOLIO INDEX PAGE            =
 =======================================*/
 
-@import "contents/portfolio/cg-portfolio-main-page";
-@import "contents/portfolio/cg-taxonomy-portfolio-item";
-@import "contents/portfolio/portfolio-masonry";
+@import 'contents/portfolio/cg-portfolio-main-page';
+@import 'contents/portfolio/cg-taxonomy-portfolio-item';
+@import 'contents/portfolio/portfolio-masonry';
 
 /*=====  End of PORTFOLIO INDEX PAGE  ======*/
 
@@ -125,7 +125,8 @@
   .tve_faq .tve_toggle {
     width: 15px;
     height: 15px;
-    background: url("/wp-content/uploads/2019/04/question-mark-icon.png") no-repeat center center;
+    background: url('/wp-content/uploads/2019/04/question-mark-icon.png')
+      no-repeat center center;
   }
 }
 

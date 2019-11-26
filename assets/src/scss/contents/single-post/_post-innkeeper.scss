@@ -1,0 +1,119 @@
+/**
+ *
+ * STYLE: Single Post New InnKeeper
+ *
+ */
+
+.post-innkeeper {
+  // padding-bottom: 5rem;
+  .container {
+    padding: 3rem;
+    margin-top: 1rem;
+  }
+
+  .entry-content {
+    // border: 1rem solid pink;
+
+    .featured-img-holder {
+      img {
+        margin-top: 0rem;
+        padding-top: 0rem;
+      }
+    }
+
+    .single-listing-info-box {
+      background-color: $cg-third;
+      padding: 1.5rem;
+
+      .price-range {
+        color: $cg-primary;
+        font-family: $secondary-font;
+        font-weight: 700;
+
+        .btn {
+          margin-top: 1rem;
+          padding: 0.5rem 4rem;
+          font-family: $secondary-font;
+        }
+      }
+
+      .phone-box {
+        // border: 1rem solid pink;
+        padding-top: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        i {
+          font-size: 1.5rem;
+          color: $cg-primary;
+        }
+      }
+
+      .highlight {
+        color: #2770aa;
+        font-weight: 600;
+      }
+
+      .address-box {
+        font-weight: 600;
+        i {
+          font-size: 1.5rem;
+          color: $cg-primary;
+        }
+      }
+    }
+
+    .entry-title {
+      font-family: $primary-font;
+      font-size: 3rem;
+      color: $cg-primary;
+    }
+
+    .innkeeper-tabbed-content {
+      // border: 1rem solid pink;
+      #myTab {
+        .nav-link.active {
+          color: white;
+          background: $cg-primary;
+        }
+        .nav-link {
+          background: darken($color: $cg-third, $amount: 5%);
+          margin-right: 0.4rem;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+      }
+
+      #myTabContent {
+        .tab-pane {
+          background-color: $cg-third;
+          height: 100%;
+          padding: 2rem;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+
+    .check-in-info-box {
+      // border: 1rem solid pink;
+      margin-top: 1rem;
+      padding: 2rem;
+      background-color: $cg-third;
+      border-radius: 10px;
+
+      i {
+        color: $cg-primary;
+      }
+
+      .highlight {
+        color: #2770aa;
+        font-weight: 600;
+      }
+    }
+
+    .entry-meta {
+      padding-right: 2rem;
+    }
+  }
+}

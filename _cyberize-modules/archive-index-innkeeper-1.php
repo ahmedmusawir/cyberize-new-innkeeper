@@ -1,7 +1,7 @@
 <?php 
 /**
  *
- * MODULE: Archive Index Biz Mobile w Sidebar
+ * MODULE: Archive Index Innkeeper
  *
  */
 ?>
@@ -12,15 +12,7 @@
 		<main id="main" class="site-main">
       <section class="top-search-box">
         <div class="container">
-					<?php // echo do_shortcode('​[wd_asp id=4]'); ?>
-					<div class="row">
-						<figure class="col-sm-5 search-box">
-							<?php get_search_form(); ?>
-						</figure>
-						<figure class="col-sm-7 search-choice">
-							<img src="http://new-innkeeper.local/wp-content/uploads/2019/11/search-choice-box.jpg" alt="">
-						</figure>
-					</div>
+          <?php echo do_shortcode('​[wd_asp id=4]'); ?>
         </div>
       </section>
 
@@ -33,7 +25,7 @@
 						<?php
 						if ( have_posts() ) : ?>
 
-							<header class="page-header d-none">
+							<header class="page-header">
 								<?php
 									the_archive_title( '<h4 class="archive-type">', '</h4>' );
 								?>
@@ -48,16 +40,16 @@
 								 * If you want to override this in a child theme, then include a file
 								 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 								 */
-								get_template_part( 'template-parts/content', 'listing-item-innkeeper' );
+								get_template_part( 'template-parts/content', 'post-item-innkeeper' );
 
 							endwhile;
 								wp_reset_postdata();
 
 								?>
 
-								<!-- <div class="post-nav-holder">
-									<?php // the_posts_navigation(); ?>
-								</div> -->
+								<div class="post-nav-holder">
+									<?php the_posts_navigation(); ?>
+								</div>
 
 								<?php
 
