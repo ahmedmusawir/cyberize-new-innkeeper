@@ -15,6 +15,12 @@
 
 get_header(); ?>
 
+<style>
+#primary {
+  background: url('http://new-innkeeper.local/wp-content/uploads/2019/11/contact-bg.jpg') no-repeat fixed;
+}
+</style>
+
 	<div id="primary" class="content-area">
 		<div class="">
 			<main id="main" class="site-main">

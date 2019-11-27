@@ -12,7 +12,7 @@ get_header(); ?>
 
 <section id="BLOCK1">
 
-	<?php get_template_part( '_cyberize-modules/archive-index-innkeeper' ); ?>
+	<?php get_template_part( '_cyberize-modules/archive-index-listing' ); ?>
 
 </section>
 

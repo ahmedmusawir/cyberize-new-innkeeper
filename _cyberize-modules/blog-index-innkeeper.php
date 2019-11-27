@@ -6,7 +6,7 @@
  */
 ?>
 
-<main id="" class="blog-index-block-bizmobile">
+<main id="" class="blog-index-innkeeper">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

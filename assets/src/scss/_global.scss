@@ -88,12 +88,6 @@ body {
  * Single Post Container
  *
  */
-// #main {
-// 	.post-single {
-
-// 	}
-
-// }
 
 img {
   max-width: 100%;
@@ -134,10 +128,39 @@ a {
     .page-numbers {
       padding: 0.5rem 1rem;
       border-radius: 30%;
+      color: $cg-primary !important;
     }
     .page-numbers.current {
       background: $cg-primary !important;
       color: white !important;
+    }
+  }
+}
+
+/**
+ * CONTACT PAGE GLOBAL STYLE      
+ */
+.page-id-5496 {
+  #gform_wrapper_15 {
+    // border: 1rem solid red;
+    padding: 2rem;
+    background-color: $cg-third;
+    border-radius: 20px;
+
+    input {
+      background: white !important;
+    }
+    textarea {
+      background: white !important;
+    }
+    .gform_footer {
+      text-align: center !important;
+    }
+    #gform_submit_button_15 {
+      background: $cg-primary !important;
+      color: white !important;
+      padding: 1rem 3rem;
+      border-radius: 50px;
     }
   }
 }

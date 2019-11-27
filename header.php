@@ -27,15 +27,15 @@
 	<header id="header-cyber" class="site-header">
 
 		<!-- Moose_Framework_2 NAVIGATION GOES HERE -->
-		<nav class="navbar navbar-expand-xl fixed-top">
+		<nav class="navbar navbar-expand-sm fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img class="logo img-fluid" src="<?php the_field('site_logo', 'option') ?>">
 				</a>
 				
-				<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
+				<!-- <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
 					<span class="navbar-toggler-icon"></span>
-				</button>
+				</button> -->
 
 				<div class="collapse navbar-collapse" id="navbar-content">
 					<?php

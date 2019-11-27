@@ -25,13 +25,16 @@
       border: 3px solid lighten($cg-primary, 20%);
 
       .navbar-toggler-icon {
-        background-image: url("/wp-content/uploads/2018/02/new-nav-icon-40.png");
+        background-image: url('/wp-content/uploads/2018/02/new-nav-icon-40.png');
       }
     }
     #navbar-content {
       #primary-menu {
-        padding-left: 2rem;
         margin-bottom: -2rem;
+
+        @media (max-width: 1199px) {
+          margin-bottom: 17px !important;
+        }
 
         .menu-item {
           // padding-right: 2rem;

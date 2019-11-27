@@ -50,7 +50,7 @@
 
 				<div class="entry-meta">
 					<section class="info-box row">
-            <article class="left-box col-sm-6">
+            <article class="left-box col-6">
               <div class="row">
                 <div class="col-3">
                   <i class="fas fa-map-marked-alt"></i>
@@ -60,7 +60,7 @@
                 </div>
               </div>
             </article>
-            <article class="right-box col-sm-6">
+            <article class="right-box col-6">
               <div class="row">
                 <div class="col-3">
                   <i class="fas fa-phone-volume"></i>
@@ -80,12 +80,12 @@
 						the_excerpt();
 						
           ?>
-          <div class="entry-meta text-center">
+          <div class="bottom-btn-box text-center">
             <section class="info-box row">
-              <article class="left-btn-box col-sm-6">
+              <article class="left-btn-box col-6">
                 <a class="btn btn-primary" href="#">Visit Website</a>
               </article>
-              <article class="right-btn-box col-sm-6">
+              <article class="right-btn-box col-6">
                 <a class="btn btn-secondary" href="#">More Info</a>
               </article>
             </section>
