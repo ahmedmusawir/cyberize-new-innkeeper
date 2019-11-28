@@ -17,7 +17,7 @@ get_header(); ?>
 
 <style>
 #primary {
-  background: url('http://new-innkeeper.local/wp-content/uploads/2019/11/contact-bg.jpg') no-repeat fixed;
+  background: url('/wp-content/uploads/2019/11/contact-bg.jpg') no-repeat fixed;
 }
 </style>
 

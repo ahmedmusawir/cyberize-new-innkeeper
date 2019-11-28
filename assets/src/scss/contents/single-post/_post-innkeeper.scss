@@ -91,6 +91,35 @@
           border-top-right-radius: 10px;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
+
+          .tax-list {
+            // list-style-type: circle;
+            // border: 1px solid red;
+
+            li {
+              // display: inline;
+            }
+          }
+          .img-key {
+            display: none;
+          }
+
+          @media (min-width: 800px) {
+            .img-key {
+              display: inline;
+              // width: 10%;
+              // float: left;
+            }
+            .tax-list {
+              // list-style-type: square !important;
+              // list-style-type: disc;
+              // list-style-position: inside;
+
+              li {
+                display: inline;
+              }
+            }
+          }
         }
       }
     }

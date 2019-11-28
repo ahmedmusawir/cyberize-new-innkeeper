@@ -29,9 +29,10 @@
             <!-- THE COVER ON TOP OF THE BG TO LINK TO PERMALINK -->
           </div>
           <div class="price-box">
-            <h6>Premium Member</h6>
+            <h6><?php the_field('listing_member_status'); ?></h6>
             <h3 class="the-price">
-              $99-$1200
+							<!-- $99-$1200 -->
+							<?php the_field('listing_item_price'); ?>
             </h3>    
           </div>
         </a>
@@ -56,7 +57,8 @@
                   <i class="fas fa-map-marked-alt"></i>
                 </div>
                 <div class="col-9">
-                  500 Palm Ave Boca Grande, FL 33921
+									<!-- 500 Palm Ave Boca Grande, FL 33921 -->
+									<?php the_field('listing_business_address'); ?>
                 </div>
               </div>
             </article>
@@ -66,8 +68,8 @@
                   <i class="fas fa-phone-volume"></i>
                 </div>
                 <div class="col-9">
-                  941.964.4500 <br>
-                  800.996.1913
+                  <?php the_field('listing_phone_1'); ?> <br>
+                  <?php the_field('listing_phone_2'); ?> 
                 </div>
               </div>
             </article>
@@ -83,10 +85,10 @@
           <div class="bottom-btn-box text-center">
             <section class="info-box row">
               <article class="left-btn-box col-6">
-                <a class="btn btn-primary" href="#">Visit Website</a>
+                <a class="btn btn-primary" href="<?php the_field('listing_visit_website'); ?>" target="_blank">Visit Website</a>
               </article>
               <article class="right-btn-box col-6">
-                <a class="btn btn-secondary" href="#">More Info</a>
+                <a class="btn btn-secondary" href="<?php the_permalink(); ?>">More Info</a>
               </article>
             </section>
           </div><!-- .entry-meta -->

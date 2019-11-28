@@ -1,8 +1,27 @@
 /*=================================
 =            HOME PAGE            =
 =================================*/
+#home-page {
+  // border: 1px solid hotpink;
+  margin-top: 2.5rem;
 
-@import "_mfw-module-styles/hero-block-mfw-001";
-@import "_mfw-module-styles/hero-story-block-mfw-001";
-@import "_mfw-module-styles/info-block-mfw-001";
-@import "_mfw-module-styles/slider-block-mfw-001";
+  .section-one {
+    min-height: 50vh;
+    background: url('/wp-content/uploads/2019/11/header-home.jpg');
+  }
+
+  .section-two {
+    .container {
+      min-height: 50vh;
+      background: url('/wp-content/uploads/2019/11/home-section-2-bg.jpg');
+      background-size: 100%;
+    }
+  }
+
+  .section-three {
+    .container {
+      min-height: 30vh;
+      background: $cg-third;
+    }
+  }
+}

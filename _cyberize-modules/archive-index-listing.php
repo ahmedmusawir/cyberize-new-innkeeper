@@ -14,11 +14,11 @@
         <div class="container">
 					<?php // echo do_shortcode('​[wd_asp id=4]'); ?>
 					<div class="row">
-						<figure class="col-sm-5 search-box">
+						<figure class="col-sm-12 col-md-5 search-box">
 							<?php get_search_form(); ?>
 						</figure>
-						<figure class="col-sm-7 search-choice">
-							<img src="http://new-innkeeper.local/wp-content/uploads/2019/11/search-choice-box.jpg" alt="">
+						<figure class="col-sm-12 col-md-7 search-choice">
+							<img src="/wp-content/uploads/2019/11/search-choice-box.jpg" alt="">
 						</figure>
 					</div>
         </div>

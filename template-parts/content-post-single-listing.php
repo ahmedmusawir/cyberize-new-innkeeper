@@ -44,8 +44,8 @@
 					<article class="row">
 						<div class="col-sm-7">
 							<h2 class="price-range">
-								$245 - $1200
-								<a href="#" class="btn btn-primary">Visit Website</a>
+								<?php the_field('listing_item_price'); ?>
+								<a href="<?php the_field('listing_visit_website'); ?>" target="_blank" class="btn btn-primary">Visit Website</a>
 							</h2>
 						</div>
 						<div class="col-sm-5">
@@ -61,7 +61,7 @@
                   <i class="fas fa-phone-volume"></i>
                 </div>
                 <div class="col-10">
-                  941.964.4500
+									<?php the_field('listing_phone_1'); ?>
                 </div>
               </div>
 						</div>
@@ -71,7 +71,7 @@
                   <i class="fas fa-phone-volume"></i>
                 </div>
                 <div class="col-10">
-                  800.996.1913
+									<?php the_field('listing_phone_2'); ?>
                 </div>
               </div>
 						</div>
@@ -84,7 +84,7 @@
               <i class="fas fa-map-marked-alt"></i>
 						</div>
 						<div class="col-10">
-							500 Palm Ave Boca Grande, FL 33921
+							<?php the_field('listing_business_address'); ?>
 						</div>
 					</div>
 
@@ -135,10 +135,10 @@
 								$terms = get_the_terms( $post->ID , 'in-room' );
 								// Loop over each item since it's an array
 								if ( $terms != null ){
-								echo '<ul class="list-unstyled">';	
+								echo '<ul class="tax-list">';	
 									foreach( $terms as $term ) {
 										// Print the name method from $term which is an OBJECT
-										echo '<li class="list-inline-item"><img src="http://new-innkeeper.local/wp-content/uploads/2019/11/the-key.png" alt="">' . $term->name . "</li>";
+										echo '<li class=""><img class="img-key" src="http://new-innkeeper.local/wp-content/uploads/2019/11/the-key.png" alt="">' . $term->name . "</li>";
 										// Get rid of the other data stored in the object, since it's not needed
 										unset($term);
 									} 
@@ -166,10 +166,10 @@
 								$terms = get_the_terms( $post->ID , 'on-site' );
 								// Loop over each item since it's an array
 								if ( $terms != null ){
-								echo '<ul class="list-unstyled">';	
+								echo '<ul class="tax-list">';	
 									foreach( $terms as $term ) {
 										// Print the name method from $term which is an OBJECT
-										echo '<li class="list-inline-item"><img src="http://new-innkeeper.local/wp-content/uploads/2019/11/the-key.png" alt="">' . $term->name . "</li>";
+										echo '<li class=""><img class="img-key" src="http://new-innkeeper.local/wp-content/uploads/2019/11/the-key.png" alt="">' . $term->name . "</li>";
 										// Get rid of the other data stored in the object, since it's not needed
 										unset($term);
 									} 
