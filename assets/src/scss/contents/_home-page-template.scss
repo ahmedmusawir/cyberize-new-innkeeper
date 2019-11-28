@@ -15,6 +15,82 @@
       min-height: 50vh;
       background: url('/wp-content/uploads/2019/11/home-section-2-bg.jpg');
       background-size: 100%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      .featured-box {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background: white;
+        margin-right: 0.2rem;
+        box-shadow: 2px 2px 6px gray;
+
+        @media (max-width: 767px) {
+          margin-bottom: 1rem;
+        }
+
+        .top-img-box {
+          height: 200px;
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+        }
+        .middle-content-box {
+          padding: 1rem;
+          @media (min-width: 768px) and (max-width: 1199px) {
+            .col-6 {
+              text-align: center;
+              flex: 0 0 100% !important;
+              max-width: 100% !important;
+
+              .btn {
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+          .entry-title {
+            font-family: $secondary-font;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          i {
+            font-size: 1.3rem;
+            color: $cg-primary;
+          }
+          .text {
+            font-size: 0.8rem;
+            font-weight: bold;
+          }
+        }
+        .the-excerpt {
+          .btn-box {
+            margin-top: 1.5rem;
+            .btn {
+              width: 150px;
+              border-radius: 20px;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .bottom-pricebox {
+          background: $cg-secondary;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          padding: 1rem;
+          color: $cg-primary;
+
+          .the-price {
+            font-family: $secondary-font;
+            font-weight: bold;
+            color: $cg-primary;
+
+            @media (min-width: 768px) and (max-width: 1199px) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
     }
   }
 
