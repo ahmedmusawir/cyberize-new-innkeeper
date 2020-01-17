@@ -66,6 +66,10 @@
       font-family: $primary-font;
       font-size: 3rem;
       color: $cg-primary;
+
+      @media (max-width: 500px) {
+        font-size: 2.5rem;
+      }
     }
 
     .innkeeper-tabbed-content {
@@ -80,6 +84,10 @@
           margin-right: 0.4rem;
           border-top-right-radius: 10px;
           border-top-left-radius: 10px;
+
+          @media (max-width: 400px) {
+            padding: 0.5rem 0.5rem !important;
+          }
         }
       }
 

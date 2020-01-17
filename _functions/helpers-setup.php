@@ -94,23 +94,6 @@ return $GLOBALS['current_theme_template'];
 
 }
 
-
-
-
-/*======================================
-=            ACF Google Map            =
-======================================*/
-
-function my_acf_init() {
-	
-	acf_update_setting('google_api_key', 'AIzaSyA_QX-gHIZII6GzEMz4LMmRTE15HDADKrI');
-}
-
-add_action('acf/init', 'my_acf_init');
-
-/*=====  End of ACF Google Map  ======*/
-
-
 /*=====================================
 =  Remove Gravity Form Labels        =
 =====================================*/
@@ -169,23 +152,3 @@ if( function_exists('acf_add_options_page') ) {
   ));
  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,6 +4,11 @@
 #home-page {
   // border: 1px solid hotpink;
   margin-top: 2.5rem;
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 90% !important;
+    }
+  }
 
   .section-one {
     min-height: 50vh;
@@ -21,12 +26,30 @@
     }
 
     .page-title {
-      font-family: $secondary-font;
-      padding-top: 10rem;
-      text-shadow: 8px 8px 15px white;
+      @media (max-width: 600px) {
+        .img-desktop {
+          display: none;
+        }
+        .img-mobile {
+          border-radius: 40% !important;
+          // border: 1rem solid red;
+          margin-top: 3rem;
+        }
+      }
+      @media (min-width: 601px) {
+        .img-desktop {
+          // display: none;
+        }
+        .img-mobile {
+          display: none;
+        }
+      }
     }
     .search-box {
-      padding-top: 5rem;
+      padding-bottom: 3rem;
+      @media (max-width: 600px) {
+        padding-top: 0 !important;
+      }
       .search-form {
         @media (max-width: 991px) {
           margin-top: 2rem;
@@ -47,8 +70,9 @@
           padding-left: 15px;
           padding-right: 57px;
           border-radius: 3px;
-          background: url(../../../assets/img/search-bg.png) no-repeat scroll
-            7px 7px;
+          background: url(/wp-content/uploads/2019/11/search-bg.png) no-repeat
+            scroll 7px 7px;
+          // background: url(../../../assets/img/search-bg.png) no-repeat scroll 7px 7px;
 
           &::placeholder {
             color: transparent !important;
@@ -58,10 +82,10 @@
             background: white;
           }
 
+          // @media (max-width: 685px) {
+          //   width: 100%;
+          // }
           @media (max-width: 685px) {
-            width: 100%;
-          }
-          @media (max-width: 620px) {
             background: white !important;
             width: 90% !important;
 
@@ -72,28 +96,6 @@
         }
         .search-submit {
           display: none;
-          // @media (max-width: 991px) {
-          //   margin-top: 2rem;
-          // }
-          // // display: none;
-          // border-radius: 0px;
-          // border: 0px solid $cg-secondary;
-          // border-radius: 0px;
-          // border: 1px solid #d4c1aa;
-          // position: absolute;
-          // top: 0px;
-          // width: 55px;
-          // height: 42px;
-          // right: -1px;
-          // color: $white;
-          // border-radius: 0px 3px 3px 0px;
-          // background: $cg-button url(../../../assets/img/search_icon.svg) 30px
-          //   18px no-repeat;
-          // // background: $cg-button url(../../../assets/img/search_icon.svg) 12px 4px no-repeat;
-
-          // // display: block;
-          // text-indent: -9999em;
-          // text-transform: uppercase;
         }
       }
     }
@@ -102,10 +104,23 @@
   .section-two {
     .container {
       min-height: 50vh;
-      background: url('/wp-content/uploads/2019/11/home-section-2-bg.jpg');
+      background: url('/wp-content/uploads/2019/11/home-section-2-bg-1.jpg');
       background-size: 100%;
       padding-top: 3rem;
       padding-bottom: 3rem;
+
+      .featured-title {
+        font-family: $secondary-font;
+        color: $cg-primary;
+      }
+
+      .featured-box-container {
+        @media (min-width: 1200px) {
+          margin-right: 4rem;
+          margin-left: 4rem;
+          margin-bottom: 5rem;
+        }
+      }
 
       .featured-box {
         border-top-left-radius: 30px;
@@ -115,6 +130,10 @@
         background: white;
         margin-right: 0.2rem;
         box-shadow: 2px 2px 6px gray;
+
+        @media (min-width: 1200px) {
+          margin: 0.5rem;
+        }
 
         @media (max-width: 767px) {
           margin-bottom: 1rem;
@@ -142,6 +161,8 @@
             font-family: $secondary-font;
             font-size: 1.2rem;
             font-weight: bold;
+            min-height: 3.5rem;
+            // border: 1px solid red;
           }
           i {
             font-size: 1.3rem;
@@ -156,7 +177,7 @@
           .btn-box {
             margin-top: 1.5rem;
             .btn {
-              width: 150px;
+              width: 120px;
               border-radius: 20px;
               font-size: 0.8rem;
             }

@@ -48,7 +48,8 @@
       li {
         &::before {
           font-family: 'FontAwesome';
-          content: '\f1de';
+          content: url('/wp-content/uploads/2019/11/Group-63-e1575005189443.png');
+          // content: '\f1de';
           color: darken($color: $cg-secondary, $amount: 30%);
           padding-right: 0.5rem;
           padding-left: 0.5rem;

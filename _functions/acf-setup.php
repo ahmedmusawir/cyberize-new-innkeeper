@@ -6,6 +6,19 @@
  *
  */
 
+/*======================================
+=            ACF Google Map            =
+======================================*/
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyCLPeaPHJFYJCR0xKMI-0aGPZpuc2aru8U');
+}
+
+add_action('acf/init', 'my_acf_init');
+
+/*=====  End of ACF Google Map  ======*/ 
+
 /**
  *
  * The following can remove or add ACF field based on User Role

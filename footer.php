@@ -11,16 +11,16 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="footer-cyberize" class="container site-footer">
+<footer id="footer-cyberize" class="container-fluid site-footer">
 
-		<hr/>
-		<div class="widgets_wrapper">
-		   <div class="row">
-		      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+  <hr />
+  <div class="widgets_wrapper">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 
-					<?php
+        <?php
 
 						if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
 							
@@ -28,15 +28,15 @@
 						}
 					?>
 
-					<aside id="footer-widget-1" class="widget-area">
-						<?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
-					</aside><!-- #secondary -->
+        <aside id="footer-widget-1" class="widget-area">
+          <?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
+        </aside><!-- #secondary -->
 
-		        
-		      </div>
-		      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
 
-					<?php
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+
+        <?php
 
 						if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
 							
@@ -44,15 +44,15 @@
 						}
 					?>
 
-					<aside id="footer-widget-2" class="widget-area">
-						<?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
-					</aside><!-- #secondary -->
+        <aside id="footer-widget-2" class="widget-area">
+          <?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
+        </aside><!-- #secondary -->
 
-		         
-		      </div>
-		      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
-					<?php
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+
+        <?php
 
 						if ( ! is_active_sidebar( 'footer-sidebar-3' ) ) {
 							
@@ -60,15 +60,15 @@
 						}
 					?>
 
-					<aside id="footer-widget-3" class="widget-area">
-						<?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
-					</aside>
+        <aside id="footer-widget-3" class="widget-area">
+          <?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
+        </aside>
 
-		      </div> 
+      </div>
 
-					<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
-					<?php
+        <?php
 
 						if ( ! is_active_sidebar( 'footer-sidebar-4' ) ) {
 							
@@ -76,27 +76,27 @@
 						}
 					?>
 
-					<aside id="footer-widget-4" class="widget-area">
-						<?php dynamic_sidebar( 'footer-sidebar-4' ); ?>
-					</aside>
+        <aside id="footer-widget-4" class="widget-area">
+          <?php dynamic_sidebar( 'footer-sidebar-4' ); ?>
+        </aside>
 
-		      </div> 
-		      
-		   </div> <!-- END ROW -->
-		   <div class="row">
-				<div class="copyright d-none">
-				<a href="<?php echo esc_url( __( 'https://cyberizegroup.com/', 'moose-framework-2' ) ); ?>"><?php
+      </div>
+
+    </div> <!-- END ROW -->
+    <div class="row">
+      <div class="copyright d-none">
+        <a href="<?php echo esc_url( __( 'https://cyberizegroup.com/', 'moose-framework-2' ) ); ?>"><?php
 					/* translators: %s: CMS name, i.e. WordPress. */
 					printf( esc_html__( 'Proudly powered by %s', 'moose-framework-2' ), 'MooseFramework 2.0' );
 				?></a>
-				<span class="sep"> | </span>
-				All Rights Reserved <a href="https://cyberizegroup.com" target="_blank">Cyberizegroup.com</a> &copy;2019
-				
-				</div><!-- .copyright -->	
-			</div>		
-		</div> <!-- END WIDGET WRAPPER -->
-		
-		<!-- <section class="site-info container">
+        <span class="sep"> | </span>
+        All Rights Reserved <a href="https://cyberizegroup.com" target="_blank">Cyberizegroup.com</a> &copy;2019
+
+      </div><!-- .copyright -->
+    </div>
+  </div> <!-- END WIDGET WRAPPER -->
+
+  <!-- <section class="site-info container">
 
 			<div class="copyright  d-flex align-items-center">
 				
@@ -114,17 +114,17 @@
 			
 		</section> -->
 
-				<!--==============================================================================
+  <!--==============================================================================
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->
-				
-				<div style="color: red"><strong>Current template:</strong> 
-					<?php  echo get_current_template( true ); ?>
-				</div>
-				
-				<!-- ====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ==== -->
-						
-	</footer><!-- #colophon -->
+
+  <div style="color: red"><strong>Current template:</strong>
+    <?php  echo get_current_template( true ); ?>
+  </div>
+
+  <!-- ====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ==== -->
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
@@ -132,4 +132,5 @@
 
 
 </body>
+
 </html>

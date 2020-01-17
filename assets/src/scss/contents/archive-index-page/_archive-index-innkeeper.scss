@@ -108,6 +108,17 @@
     .entry-content {
       margin-bottom: 2rem;
 
+      @media (max-width: 575px) {
+        .row {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+
+          .left-col {
+            border-radius: 0 !important;
+          }
+        }
+      }
+
       .left-col {
         border-top: 1px solid gray;
         border-left: 1px solid gray;

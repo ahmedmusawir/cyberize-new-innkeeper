@@ -22,7 +22,9 @@ get_header(); ?>
       <div class="col-sm-12 col-md-5"></div>
       <div class="col-sm-12 col-md-7 text-center">
         <h1 class="page-title pl-4 pr-4">
-          Find Your Best Inn Experience!
+          <!-- Find Your Best Inn Experience! -->
+          <img class="img-desktop" src="/wp-content/uploads/2019/11/Inn-Experience.png" alt="">
+          <img class="img-mobile" src="/wp-content/uploads/2019/11/Inn-mobile.png" alt="">
         </h1>
         <div class="search-box">
           <?php 
@@ -47,8 +49,10 @@ get_header(); ?>
   ?>
 
     <div class="container">
-
-      <div class="row">
+      <h1 class="featured-title text-center py-5">
+        Featured Inns
+      </h1>
+      <div class="row featured-box-container">
 
         <?php
           if($inn_query->have_posts()) : 
@@ -158,7 +162,7 @@ get_header(); ?>
               <img src="/wp-content/uploads/2019/11/Group-137.png" alt="">
             </figure>
             <h4 class="title">
-              News Optin For Deals
+              Deals News 
             </h4>
           </a>
         </div>

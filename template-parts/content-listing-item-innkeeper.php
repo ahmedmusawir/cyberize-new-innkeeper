@@ -118,15 +118,17 @@
 		?>
 		<div class="entry-meta">
 			<?php
-				cyberize_posted_by();
+				// cyberize_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		
 		<div class="pr-3 pt-3 pb-3">
 			<?php
 			// <!-- CONTENT -->
-				the_excerpt();
+				// the_excerpt();
 			?>
+			<h3>Please Add a Featured Image</h3>
+
 		</div>
 
 
