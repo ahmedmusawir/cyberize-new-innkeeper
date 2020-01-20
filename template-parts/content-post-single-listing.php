@@ -27,8 +27,6 @@
 
         <div class="col-sm-12 col-md-12 col-lg-6">
 
-          <!-- MOOSE CALLING THE CUSTOM HEADER HERE  -->
-
           <?php get_header(); ?>
 
           <!-- SECTION 1: TOP CAROUSEL BLOCK -->
@@ -40,46 +38,21 @@
 
           <section class="top-carousel-block">
 
-            <div class="">
+            <div class="moose-slick-carousel">
 
-              <div class="moose-slick-carousel">
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1015/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1016/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1018/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1021/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1019/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1022/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1023/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1024/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1025/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1026/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1027/500/250.jpg" alt="product-category"></div>
-                </a>
-                <a href="https://google.com">
-                  <div><img src="https://i.picsum.photos/id/1028/500/250.jpg" alt="product-category"></div>
-                </a>
-              </div>
+              <?php $images = get_field('listing_image_gallery'); ?>
+
+              <?php if ( $images ) : ?>
+
+              <?php foreach($images as $image) : ?>
+
+              <figure class="image-box">
+                <div><img class="w-100" src="<?php echo $image['sizes']['large']; ?>" alt="Listing Gallery Image"></div>
+              </figure>
+
+              <?php endforeach; ?>
+
+              <?php endif; ?>
 
             </div>
 
@@ -93,7 +66,7 @@
             $('.moose-slick-carousel').slick({
               dots: true,
               autoplay: true,
-              autoplaySpeed: 2000,
+              autoplaySpeed: 4000,
             });
 
           });
